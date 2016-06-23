@@ -11,6 +11,8 @@ namespace TVSetsStatePattern.V4
         public void ChannelUp(TVset tvSet)
         {
             tvSet.TvState = new SwitchedOnState();
+            Console.WriteLine("The tv is now ON");
+
         }
 
         public void SoundUp(TVset tvSet)
@@ -21,6 +23,7 @@ namespace TVSetsStatePattern.V4
         public void Toggle(TVset tvSet)
         {
             tvSet.TvState = new SwitchedOnState();
+            Console.WriteLine("The tv is now ON");
         }
     }
 }

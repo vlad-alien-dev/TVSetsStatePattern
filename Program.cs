@@ -16,7 +16,6 @@ namespace TVSetsStatePattern
             //tv.ChannelUp();
             //tv.SoundUp();
 
-
             TVset tv = new TVset(new SwitchedOnState());
 
             tv.ChannelUp();
@@ -27,7 +26,11 @@ namespace TVSetsStatePattern
 
             tv.Toggle();
 
+            tv.SoundUp();
+
             tv.ChannelUp();
+
+            Console.ReadKey();
         }
     }
 }

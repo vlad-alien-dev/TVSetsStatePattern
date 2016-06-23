@@ -11,16 +11,19 @@ namespace TVSetsStatePattern.V4
         public void ChannelUp(TVset tvSet)
         {
             tvSet.Channel++;
+            Console.WriteLine("You are watching channel {0}", tvSet.Channel);
         }
 
         public void SoundUp(TVset tvSet)
         {
             tvSet.Sound++;
+            Console.WriteLine("The sound level is {0}", tvSet.Sound);
         }
 
         public void Toggle(TVset tvSet)
         {
             tvSet.TvState = new StandByState();
+            Console.WriteLine("The tv is now OFF");
         }
     }
 }
