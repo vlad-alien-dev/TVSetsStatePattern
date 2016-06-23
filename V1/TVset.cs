@@ -12,11 +12,11 @@ namespace TVSetsStatePattern.V1
         private int channel;
         private int sound;
 
-        public void ChangeChannel()
+        public void ChannelUp()
         {
             if (isSwitchedOn)
             {
-                SwitchChannel(channel);
+                SwitchChannel(++channel);
             }
             else
             {
@@ -24,11 +24,11 @@ namespace TVSetsStatePattern.V1
             }
         }
 
-        public void ChangeSound()
+        public void SoundUp()
         {
             if (isSwitchedOn)
             {
-                AlterSound(sound);
+                AlterSound(++sound);
             }
         }
 

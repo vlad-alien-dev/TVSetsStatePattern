@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TVSetsStatePattern.V1;
 
 namespace TVSetsStatePattern
 {
@@ -10,6 +11,13 @@ namespace TVSetsStatePattern
     {
         static void Main(string[] args)
         {
+            TVset tv = new TVset();
+            tv.ChannelUp();
+            tv.SoundUp();
+
+
+
+
         }
     }
 }
