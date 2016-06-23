@@ -10,12 +10,20 @@ namespace TVSetsStatePattern.V3
     {
         public void ChannelUp(TVset tvSet)
         {
-            tvSet.IsSwtchedOn = true;
+            tvSet.TvState = new SwitchedOnState();
+            Console.WriteLine("The tv is now ON");
+
         }
 
         public void SoundUp(TVset tvSet)
         {
             
+        }
+
+        public void Toggle(TVset tvSet)
+        {
+            tvSet.TvState = new SwitchedOnState();
+            Console.WriteLine("The tv is now ON");
         }
     }
 }

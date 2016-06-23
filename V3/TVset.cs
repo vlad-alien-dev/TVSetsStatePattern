@@ -11,7 +11,6 @@ namespace TVSetsStatePattern.V3
         
         public int Sound { get; set; }
         public int Channel { get; set; }
-        public bool IsSwtchedOn { get; set; }
 
 
         public ITvState TvState { get; set; }
@@ -24,6 +23,14 @@ namespace TVSetsStatePattern.V3
         public void SoundUp()
         {
             TvState.SoundUp(this);
+        }
+        public void ChannelUp()
+        {
+            TvState.ChannelUp(this);
+        }
+        public void Toggle()
+        {
+            TvState.Toggle(this);
         }
     }
 }

@@ -24,5 +24,13 @@ namespace TVSetsStatePattern.V2
         {
             TvState.SoundUp(this);
         }
+        public void ChannelUp()
+        {
+            TvState.ChannelUp(this);
+        }
+        public void Toggle()
+        {
+            TvState.Toggle(this);
+        }
     }
 }
